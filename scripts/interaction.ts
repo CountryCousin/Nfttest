@@ -1,12 +1,12 @@
 import { ethers } from "hardhat";
 
-// CONTRACT DEPLOYED TO: 0x39ef98a05b53e45a081d87832cffdc5dc6009d66
-// OPENSEA LINK TO NFT: https://testnets.opensea.io/assets/rinkeby/0x39ef98a05b53e45a081d87832cffdc5dc6009d66/0
+// CONTRACT DEPLOYED TO: 0xff957da4fcd8684702e900a6fc58b54255490a88
+// OPENSEA LINK TO NFT: https://testnets.opensea.io/assets/rinkeby/0xff957da4fcd8684702e900a6fc58b54255490a88/0
 
 async function main() {
-  const Page = await ethers.getContractFactory("Longs");
+  const Page = await ethers.getContractFactory("Vic");
   const PageNFT = Page.attach(
-    "0x39ef98a05b53e45a081d87832cffdc5dc6009d66"
+    "0xff957da4fcd8684702e900a6fc58b54255490a88"
   );
 
   const NFTName = await PageNFT.name();
