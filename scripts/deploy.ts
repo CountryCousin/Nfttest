@@ -6,7 +6,7 @@ async function main() {
 
   await PageNFT.deployed();
 
-  console.log(`Longs NFT deployed to ${PageNFT.address}`); 
+  console.log(` NFT deployed to ${PageNFT.address}`); 
 }
 
 main().catch((error) => {
